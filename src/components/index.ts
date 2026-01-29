@@ -1,0 +1,13 @@
+export { default as HeroSection } from './HeroSection';
+export { default as DiagnosticTests } from './DiagnosticTests';
+export { default as WhyBookTests } from './WhyBookTests';
+export { default as HealthPackages } from './HealthPackages';
+export { default as HealthScans } from './HealthScans';
+export { default as CommonRiskArea } from './CommonRiskArea';
+export { default as TrustedLab } from './TrustedLab';
+export { default as RoutineCheckup } from './RoutineCheckup';
+export { default as FamilyPackages } from './FamilyPackages';
+export { default as HealthPulse } from './HealthPulse';
+export { default as FAQ } from './FAQ';
+export { default as DownloadApp } from './DownloadApp';
+export { default as Footer } from './Footer';

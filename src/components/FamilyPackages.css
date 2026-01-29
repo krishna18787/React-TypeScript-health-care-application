@@ -1,0 +1,172 @@
+.family-packages {
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+
+.family-packages__header {
+  text-align: left;
+  margin-bottom: 48px;
+}
+
+.family-packages__title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.3;
+  color: #003236;
+  margin-bottom: 8px;
+}
+
+.family-packages__subtitle {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #374151;
+  margin: 0;
+  max-width: none;
+}
+
+.family-packages__scroller {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overflow-y: visible;
+  padding-top: 8px;
+  padding-bottom: 20px;
+  margin-top: -8px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+.family-packages__scroller::-webkit-scrollbar {
+  height: 8px;
+}
+
+.family-packages__scroller::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.family-packages__scroller::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.family-packages__card {
+  min-width: 480px;
+  width: 480px;
+  flex-shrink: 0;
+  border-radius: 16px;
+  padding: 32px;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+}
+
+.family-packages__card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+.family-packages__cardContent {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.family-packages__cardLeft {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.family-packages__cardName {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.3;
+  color: #003236;
+  margin: 0;
+}
+
+.family-packages__price {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.family-packages__originalPrice {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  color: #6B7280;
+  text-decoration: line-through;
+}
+
+.family-packages__discountedPrice {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  color: #C5000B;
+}
+
+.family-packages__parameters {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  color: #374151;
+}
+
+.family-packages__recommended {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #1E8281;
+  background: rgba(30, 130, 129, 0.1);
+  padding: 6px 12px;
+  border-radius: 6px;
+  display: inline-block;
+  width: fit-content;
+}
+
+.family-packages__cardRight {
+  flex-shrink: 0;
+}
+
+.family-packages__image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.family-packages__button {
+  position: absolute;
+  bottom: 24px;
+  right: 24px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background: #003236;
+  color: #FFFFFF;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.family-packages__button:hover {
+  background: #1E8281;
+}

@@ -1,0 +1,412 @@
+.health-scans {
+  padding: 80px 0;
+  background: #FFFFFF;
+}
+
+.health-scans__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 24px;
+  margin-bottom: 40px;
+}
+
+.health-scans__headerLeft {
+  flex: 1;
+}
+
+.health-scans__title {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.3;
+  color: #003236;
+  margin-bottom: 8px;
+}
+
+.health-scans__subtitle {
+  margin-top: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #000000;
+}
+
+.health-scans__viewAll {
+  background: transparent;
+  border: 2px solid #000000;
+  color: #000000;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.health-scans__viewAll:hover {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.health-scans__scroller {
+  display: flex;
+  gap: 24px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 20px;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(0, 0, 0, 0.2) transparent;
+}
+
+.health-scans__scroller::-webkit-scrollbar {
+  height: 8px;
+}
+
+.health-scans__scroller::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.health-scans__scroller::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+}
+
+.health-scans__card {
+  box-sizing: border-box;
+  /* background will be set inline via style attribute */
+  border: none;
+  box-shadow: none;
+  border-radius: 12px;
+  padding: 0;
+  min-width: 640px;
+  width: 640px;
+  height: 320px;
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  display: flex;
+  flex-direction: row;
+  gap: 0;
+  transition: transform 0.2s ease;
+  position: relative;
+}
+
+.health-scans__card:hover {
+  transform: translateY(-4px);
+}
+
+.health-scans__iconWrapper {
+  position: absolute;
+  width: 223.4px;
+  height: 274.62px;
+  left: 39px;
+  top: 23px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+.health-scans__iconWrapper::before {
+  content: '';
+  position: absolute;
+  width: 215.02px;
+  height: 218.06px;
+  left: 8.38px;
+  top: 31.6px;
+  background: rgba(30, 130, 129, 0.2);
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.health-scans__clipboard {
+  width: 135.6px;
+  height: 195px;
+  position: relative;
+  transform: rotate(-18.84deg);
+  z-index: 1;
+}
+
+.health-scans__clipboardClip {
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40px;
+  height: 16px;
+  background: #263E53;
+  border-radius: 6px 6px 0 0;
+  z-index: 2;
+}
+
+.health-scans__clipboardClip::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 10px;
+  height: 10px;
+  background: white;
+  border-radius: 50%;
+}
+
+.health-scans__clipboardPaper {
+  width: 100%;
+  height: 100%;
+  background: #FFFFFF;
+  border: 3px solid #4ECDC4;
+  border-radius: 8px;
+  padding: 20px 16px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.health-scans__rx {
+  font-family: 'Georgia', serif;
+  font-size: 28px;
+  font-weight: 400;
+  font-style: italic;
+  color: #263E53;
+  margin-bottom: 12px;
+}
+
+.health-scans__lines {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.health-scans__line {
+  width: 100%;
+  height: 2px;
+  background: #263E53;
+  border-radius: 1px;
+}
+
+.health-scans__signature {
+  width: 70px;
+  height: 20px;
+  border-bottom: 2px solid #263E53;
+  position: relative;
+}
+
+.health-scans__signature::before {
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 0;
+  width: 60px;
+  height: 14px;
+  background: linear-gradient(90deg, transparent 0%, #263E53 20%, #263E53 80%, transparent 100%);
+  opacity: 0.3;
+  transform: skewX(-15deg);
+}
+
+.health-scans__badge {
+  box-sizing: border-box;
+  position: absolute;
+  width: 76.28px;
+  height: 76.28px;
+  left: 75.19px;
+  top: 198.33px;
+  background: #FFFFFF;
+  border: 4.36px solid rgba(30, 130, 129, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.health-scans__badge svg {
+  width: 36px;
+  height: 36px;
+}
+
+.health-scans__badge svg circle {
+  stroke: #4ECDC4;
+  stroke-width: 3px;
+}
+
+.health-scans__badge svg path {
+  stroke: #4ECDC4;
+  stroke-width: 3px;
+}
+
+.health-scans__content {
+  position: absolute;
+  width: 283px;
+  height: 190px;
+  left: 301px;
+  top: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: flex-start;
+}
+
+.health-scans__info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 35px;
+}
+
+.health-scans__name {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+  text-align: center;
+  text-transform: capitalize;
+  color: #000000;
+  margin: 0;
+}
+
+.health-scans__description {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #5A5A5A;
+  margin: 0;
+}
+
+.health-scans__description strong {
+  font-weight: 700;
+  color: #000000;
+}
+
+.health-scans__pricing {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+.health-scans__priceGroup {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.health-scans__label {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 30px;
+  text-align: center;
+  color: #5A5A5A;
+  margin-bottom: 15px;
+  display: block;
+}
+
+.health-scans__priceRow {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.health-scans__price {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 28px;
+  text-align: right;
+  letter-spacing: -0.408px;
+  color: #000000;
+}
+
+.health-scans__originalPrice {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration-line: line-through;
+  color: #C5000B;
+}
+
+.health-scans__addBtn {
+  width: 36px;
+  height: 36px;
+  background: #003236;
+  border: none;
+  border-radius: 3.857px;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+}
+
+.health-scans__addBtn svg {
+  display: block;
+}
+
+.health-scans__addBtn:hover {
+  background: #002529;
+  transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+  .health-scans {
+    padding: 60px 0;
+  }
+  
+  .health-scans__header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .health-scans__title {
+    font-size: 24px;
+  }
+  
+  .health-scans__subtitle {
+    font-size: 16px;
+  }
+  
+  .health-scans__card {
+    min-width: 500px;
+    width: 500px;
+    height: auto;
+  }
+  
+  .health-scans__iconWrapper {
+    width: 220px;
+    height: 220px;
+  }
+}
+
+@media (max-width: 540px) {
+  .health-scans__card {
+    min-width: 360px;
+    width: 360px;
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .health-scans__iconWrapper {
+    width: 100%;
+    height: 200px;
+  }
+}
