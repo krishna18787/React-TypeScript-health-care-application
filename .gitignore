@@ -58,3 +58,5 @@ lerna-debug.log*
 # Documentation (optional - remove if you want to track these)
 REFACTORING-SUMMARY.md
 TITLE-STANDARDIZATION.md
+.vercel
+.env*.local
